@@ -1,12 +1,13 @@
 package handlers
 
 import (
-	"Go-HttpServerDemo/store"
 	"errors"
 	"net/http"
 	"net/http/httptest"
 	"strings"
 	"testing"
+
+	"github.com/willdot/Go-HttpServerDemo/store"
 
 	"github.com/gorilla/mux"
 )

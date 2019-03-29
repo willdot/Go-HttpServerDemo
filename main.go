@@ -3,10 +3,11 @@
 package main
 
 import (
-	"Go-HttpServerDemo/handlers"
-	"Go-HttpServerDemo/store"
 	"log"
 	"net/http"
+
+	"github.com/willdot/Go-HttpServerDemo/handlers"
+	"github.com/willdot/Go-HttpServerDemo/store"
 
 	"github.com/gorilla/mux"
 )

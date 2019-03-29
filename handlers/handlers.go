@@ -5,7 +5,7 @@ import (
 	"errors"
 	"net/http"
 
-	"Go-HttpServerDemo/store"
+	"github.com/willdot/Go-HttpServerDemo/store"
 
 	"github.com/gorilla/mux"
 )
