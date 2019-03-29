@@ -1,0 +1,13 @@
+version: '2'
+services:
+  app:
+    container_name: my-app
+    build: .
+    command: go run main.go
+    volumes:
+      - .:/go/src/app
+    working_dir: /go/src/app
+    ports:
+      - "60:3001"
+    environment:
+      PORT: 3001

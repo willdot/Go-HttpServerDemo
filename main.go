@@ -5,6 +5,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/willdot/Go-HttpServerDemo/handlers"
 	"github.com/willdot/Go-HttpServerDemo/store"
@@ -22,13 +23,17 @@ func init() {
 }
 
 func main() {
+	var PORT string
+	if PORT = os.Getenv("PORT"); PORT == "" {
+		PORT = "3001"
+	}
 	router := mux.NewRouter()
 
 	router.HandleFunc("/people", handlers.GetPeople(&app)).Methods("GET")
 	router.HandleFunc("/people/{id}", handlers.GetPerson(&app)).Methods("GET")
 	router.HandleFunc("/people/{id}", handlers.CreatePerson(&app)).Methods("POST")
 	router.HandleFunc("/people/{id}", handlers.DeletePerson(&app)).Methods("DELETE")
-	err := http.ListenAndServe(":8080", router)
+	err := http.ListenAndServe(":"+PORT, router)
 
 	if err != nil {
 		log.Fatal(err)

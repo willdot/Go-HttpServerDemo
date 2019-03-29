@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "WgzN84Tx+7en7p/e8gSTupIqygw=",
+			"path": "github.com/gorilla/mux",
+			"revision": "c5c6c98bc25355028a63748a498942a6398ccd22",
+			"revisionTime": "2019-03-16T13:32:43Z"
+		},
+		{
+			"checksumSHA1": "c6gbNaJb5UV8ynkDXe0nVvffHXA=",
+			"path": "github.com/willdot/Go-HttpServerDemo/handlers",
+			"revision": "d6e34cc18ad03e3f6f6d8df850df325f353ad969",
+			"revisionTime": "2019-03-29T15:15:24Z"
+		},
+		{
+			"checksumSHA1": "4eP/Lvy00XjjW0zcxwka1s9MrRU=",
+			"path": "github.com/willdot/Go-HttpServerDemo/store",
+			"revision": "d6e34cc18ad03e3f6f6d8df850df325f353ad969",
+			"revisionTime": "2019-03-29T15:15:24Z"
+		}
+	],
+	"rootPath": "Go-HttpServerDemo"
+}
