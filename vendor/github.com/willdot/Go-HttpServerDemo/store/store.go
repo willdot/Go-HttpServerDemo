@@ -46,7 +46,7 @@ func (f *RealStore) Delete(ID string) error {
 
 // FindByID returns a person using an id
 func (f *RealStore) FindByID(ID string) (Person, error) {
-	person := Person{}
+	person := Person{ID: ID, FirstName: "will"}
 	return person, nil
 }
 
