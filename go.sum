@@ -1,0 +1,4 @@
+github.com/gorilla/mux v1.7.1 h1:Dw4jY2nghMMRsh1ol8dv1axHkDwMQK2DHerMNJsIpJU=
+github.com/gorilla/mux v1.7.1/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
+github.com/willdot/Go-HttpServerDemo v0.0.0-20190329151524-d6e34cc18ad0 h1:g1X8OSyDM6G1FeWDhRpSP5ZM67NukjW9IE57N6ZH3eM=
+github.com/willdot/Go-HttpServerDemo v0.0.0-20190329151524-d6e34cc18ad0/go.mod h1:SnPIwKLd5AKeYZ8CJiSIAJorBiYmN+O1tUzKKq4mHI0=

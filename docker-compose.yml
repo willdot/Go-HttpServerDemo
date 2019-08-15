@@ -5,9 +5,10 @@ services:
     build: .
     command: go run main.go
     volumes:
-      - .:/go/src/app
-    working_dir: /go/src/app
+      - .:/app
+    working_dir: /app
     ports:
       - "60:3001"
     environment:
+      GO111MODULE: "on"
       PORT: 3001

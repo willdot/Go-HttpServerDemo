@@ -1,6 +1,13 @@
 FROM golang:1.12
 
-ADD . /go/src/app
-WORKDIR /go/src/app
+ENV GO111MODULE=on
+
+WORKDIR /app
+COPY go.mod .
+COPY go.sum .
+
+RUN go mod download
+
+COPY . .
 
 ENV PORT=3001
